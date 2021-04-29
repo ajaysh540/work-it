@@ -1,0 +1,72 @@
+.new-note-btn {
+    position: fixed;
+    right: 5vw !important;
+    bottom: 5vh !important;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #25a8ff;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 5px #212529;
+}
+
+.new-note-btn:hover {
+    background-color: #0099ff;
+    cursor: pointer;
+}
+
+.show-note {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 2vw;
+    top: 2vh;
+    text-align: center;
+    background-color: #25a8ff;
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #0099ff;
+}
+
+.note {
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: white;
+    color: black;
+    margin-bottom: 0;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+}

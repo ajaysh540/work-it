@@ -1,0 +1,24 @@
+.task-card {
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    align-content: space-between;
+}
+
+.del-btn {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 40px;
+    padding: 5px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.task-card div label {
+    width: fit-content;
+    text-align: left;
+}

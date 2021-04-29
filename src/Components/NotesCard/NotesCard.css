@@ -1,0 +1,26 @@
+.card-container {
+    column-count: 4;
+    column-gap: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        column-count: 2;
+    }
+}
+
+.note-card {
+    background-color: transparent;
+    display: inline-block;
+    border: 1px solid black;
+    margin: 0 0 1em;
+    width: 100%;
+    text-align: left;
+    overflow-y: hidden;
+    min-height: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px grey;
+}
+
+
+/* #25a8ff */
