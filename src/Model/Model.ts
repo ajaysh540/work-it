@@ -3,7 +3,7 @@ export type userModel = {
 }
 
 export type notesModel = {
-    created:Object,
+    created:string,
     note:string,
     id:string
 }
@@ -17,7 +17,7 @@ export type tasksModel = {
 
 
 export const notesModelDefault:notesModel = {
-    created:"",
+    created: "",
     note:"",
     id:""
 }

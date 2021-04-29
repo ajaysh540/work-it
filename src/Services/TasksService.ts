@@ -1,11 +1,10 @@
 import { auth, storage } from "./Firebase";
-import firebase from "firebase/app"
 
 export const saveNewTask = (task: string,date:string) => {
     let id = auth.currentUser?.uid;
     let saved = storage.collection("Task")
       .doc(id).collection("myTask").add({
-        created: firebase.firestore.FieldValue.serverTimestamp(),
+        created: new Date().toLocaleDateString(),
         task: task,
         date: date,
         id: storage.collection("Task").doc().id

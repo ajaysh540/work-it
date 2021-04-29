@@ -1,11 +1,10 @@
 import { auth, storage } from "./Firebase";
-import firebase from "firebase/app"
 
 export const saveNewNote = (text: string) => {
     let id = auth.currentUser?.uid;
     let saved = storage.collection("notes")
       .doc(id).collection("mynotes").add({
-        created: firebase.firestore.FieldValue.serverTimestamp(),
+        created: new Date().toLocaleDateString(),
         note: text,
         id: storage.collection("notes").doc().id
       }).then(res => {
@@ -22,7 +21,7 @@ export const saveNewNote = (text: string) => {
     let values: any;
     if (id)
       values = storage.collection("notes").doc(id).collection("mynotes").orderBy("created", "desc").get().then(async res => await res.docs)
-  
+    
     return await values;
   }
   

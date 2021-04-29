@@ -7,9 +7,12 @@ type Notes = {
 }
 
 const NotesCard: React.FC<Notes> = ({ note, showNote }) => {
-    return <button  key={note.id} className="note-card" 
+    
+    return <button key={note.id} className="note-card"
         onClick={() => showNote(note)}>
-        {note.note.substring(0,350)}
+        <label className="text-danger">{note.created.split("T")[0]}</label>
+        <br />
+        {note.note.substring(0, 350)}
     </button>
 }
 
